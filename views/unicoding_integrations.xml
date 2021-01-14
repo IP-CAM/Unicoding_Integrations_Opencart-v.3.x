@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="unicoding_integrations_opencart3_unicoding_integrations_view" model="ir.ui.view">
+            <field name="name">unicoding_bank_sync_alfabank.unicoding_integrations_view</field>
+            <field name="model">unicoding.integrations</field>
+            <field name="inherit_id" ref="unicoding_integrations.unicoding_integrations_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="inside">
+                    <field name="url"/>
+                    <field name="api_username"/>
+                    <field name="api_key"/>
+                    <field name="_access_token"/>
+                    <field name="last_item_date"/>
+                </xpath>
+                <xpath expr="//header" position="inside">
+                    <button name="action_getorders" string="Get Orders" type="object" class="btn-primary"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+
+
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="unicoding_integrations_opencart3" model="unicoding.integrations">
+        <field name="name">OpenCart3</field>
+        <field name="image_128" type="base64" file="unicoding_integrations_opencart3/static/src/img/opencart.png"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="url">https://opencart.com/</field>
+        <field name="api_username">default</field>
+        <field name="api_key"></field>
+
+    </record>
+</odoo>
